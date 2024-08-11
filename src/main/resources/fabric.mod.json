@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sylermod",
+	"version": "${version}",
+	"name": "Syler Mod",
+	"description": "My first mod not sure yet",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sylermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sylver.sylermod.SylerMod"
+		],
+		"fabric-datagen": [
+			"net.sylver.sylermod.SylerModDataGenerator"
+		],
+		"client": [
+			"net.sylver.sylermod.SylerModClient"
+		]
+	},
+	"mixins": [
+		"sylermod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

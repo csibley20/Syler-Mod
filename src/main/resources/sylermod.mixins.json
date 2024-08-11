@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.sylver.sylermod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
